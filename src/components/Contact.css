@@ -1,0 +1,90 @@
+.contact {
+  padding: 50px 20px;
+
+  color: #fff;
+  text-align: center;
+}
+
+.contact .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  color: #fff;
+}
+
+.contact-form textarea {
+  height: 150px; /* Adjust the height as needed */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ddd; /* Placeholder color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.2);
+  outline: none;
+  background: rgba(255, 255, 255, 0.2); /* Slightly more visible background on focus */
+}
+
+.contact-form button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(270deg, #003366, #45966da1);
+  background-size: 800% 800%;
+  animation: gradientAnimation 20s ease infinite;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #004a99;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
